@@ -1,0 +1,101 @@
+page{
+  font-size: 16px;
+}
+.slider,
+.slider image{
+  width: 100%;
+  height: 400rpx;
+}
+.desc{
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx 20rpx;
+  line-height: 1.5;
+}
+.tips{
+  color: #f19e38;
+}
+.diviter{
+  height: 20rpx;
+  width: 100%;
+    background-color:#ddd;
+    /* box-shadow: h-shadow v-shadow blur spread color inset;
+      水平阴影的位置 垂直阴影的位置 模糊距离 阴影的尺寸 阴影的颜色 把外阴影转为内阴影
+     */
+    box-shadow: 0 10rpx 20rpx 0 rgba(0,0,0,0.05) inset;
+}
+.types,.address{
+  padding: 20rpx 20rpx;
+ 
+}
+.picker{
+ display: flex;
+ justify-content: space-between;
+}
+.fontstyle{
+  color:#bbb;
+  margin-right: 20rpx;
+}
+.comment{
+  margin: 20rpx 20rpx;
+ 
+}
+.commentTitle{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #f2f2f2;
+  box-sizing: border-box;
+  margin-bottom: 20rpx;
+}
+.comNum{
+  color:#f19e38;
+  padding-bottom: 10rpx;
+}
+.commentItem{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1rpx solid #f2f2f2;
+  box-sizing: border-box;
+}
+.commentHead{
+  position: relative;
+  text-align: right;
+}
+.star{
+ position: absolute;
+  top: 0;
+  left: 0;
+}
+.comstarBefore{
+  color:  #e2e2e2; 
+}
+.comstarAfter{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #f19e38;
+  overflow:hidden; 
+}
+.username{
+  color: #bbb;
+}
+.content{
+  margin: 20rpx 0;
+}
+.commentImg image{
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}
+.allComment{
+  margin-top: 30rpx;
+}
+.allFont{
+  border: 3rpx solid #bbb;
+  border-radius: 20rpx;
+  padding: 10rpx;
+  
+}

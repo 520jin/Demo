@@ -1,0 +1,13 @@
+<view class="cell">
+  <view class="cellNavItem">
+    <navigator class='navCell' hover-class='navigator-hover' wx:for="{{navDataList}}" wx:key="id" data-index='{{index}}' bindtap='isTap' style="{{index==id?changeNavItemStyle:nomalNavItemStyle}}">
+      <text>{{item.titel}}</text>
+    </navigator>
+  </view>
+  <view class='cellCategoryItem'>
+    <navigator class='categoryCell' wx:for='{{categoryList}}' wx:key='{{item.id}}' url='/pages/shopList/shopList'>
+      <image src='{{item.image}}' mode='aspectFill'></image>
+      <text class='categoryText'>{{item.text}}</text>
+    </navigator>
+  </view>
+</view>

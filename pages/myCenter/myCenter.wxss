@@ -1,0 +1,39 @@
+.header{
+  width: 100%;
+  height: 400rpx;
+  background-color: peachpuff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  font-size: 18px;
+  
+}
+.header image
+{
+  width: 200rpx;
+  height: 200rpx;
+  border: 10rpx solid rgba(0, 0, 0, .1);
+  border-radius: 50%;
+  margin-bottom:20rpx; 
+}
+.term{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #ddd;
+  padding:30rpx;
+  font-size: 18px;
+}
+.leftterm image{
+  width: 69rpx;
+  height: 68rpx;
+  margin-right: 10px;
+}
+/* .rightterm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+

@@ -1,0 +1,39 @@
+<view class='goods' bindtap='linkToDetail'>
+  <view class='goodsImg'>
+    <image src='https://image3.suning.cn/uimg/b2c/newcatentries/0070204492-000000000742867539_1.jpg_300w_300h_4e?ver=2003' mode='aspectFill'></image>
+  </view>
+  <view class='goodsDesc'>
+    <text class='goodsName'>优米思沙琪玛蜜枣芝麻混合1000g酥红枣早餐糕点办公室美食小吃零食袋装</text>
+    <text class='goodsTips'>奶香十足 | 营养早餐 | 美味实惠</text>
+    <text class='goodsPrice'>￥<text class='maxPrice'>30</text>.90</text>
+    <view class='minCar center'  catchtap='joinCar'>
+      <image src='/images/minCar.png' mode='aspectFill' class='minCarImg'></image>
+    </view>
+    
+
+    <text class='Num'>2100+条评价</text>
+    <view class='goodsStar'>
+      <text class='starBefore'>★★★★★</text>
+      <text class='starAfter' style='width:80%;'>★★★★★</text>
+    </view>
+  </view>
+</view>
+<view class='goods' wx:for='{{goodsList}}' wx:key='id' bindtap='linkToDetail'>
+  <view class='goodsImg'>
+    <image src='{{item.image}}' mode='aspectFill'></image>
+    <text class='showNullGoods' wx:if='{{item.goodsSum<=0}}' style='top:{{(item.tips!=="")?"4rem":"4.2rem"}}'>无货</text>
+  </view>
+  <view class='goodsDesc'>
+    <text class='goodsName'>{{item.name}}</text>
+    <text class='goodsTips'>{{item.tips}}</text>
+    <text class='goodsPrice'>￥<text class='maxPrice'>{{item.price}}</text></text>
+    <view  class='minCar center' style='top:{{(item.tips!=="")?"2.6rem":"1.8rem"}}'  catchtap='{{item.goodsSum<=0?"return":"joinCar"}}' data-id='{{index}}'>
+      <image src='/images/minCar.png' mode='aspectFill' class='minCarImg'></image>
+    </view>
+    <text class='Num'>{{item.num}}+条评价</text>
+    <view class='goodsStar'  style='top:{{(item.tips!=="")?"3.7rem":"2.7rem"}}'>
+      <text class='starBefore'>★★★★★</text>
+      <text class='starAfter' style='width:{{item.score}}%;'>★★★★★</text>
+    </view>
+  </view>
+</view>

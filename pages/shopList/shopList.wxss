@@ -1,0 +1,81 @@
+.goods{
+  height: 6.rem;
+  display: flex;
+  margin: 20rpx 20rpx;
+  position: relative;
+  
+}
+.goodsImg{
+  display: flex;
+  flex-direction: column;
+  width: 200rpx;
+ 
+}
+.goodsImg image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.showNullGoods{
+  position: absolute;
+  left: 0;
+  top:4rem;
+  width: 200rpx;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.goodsDesc{
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.5;
+  margin-left: 20rpx;
+  position: relative;
+}
+.goodsDesc::after{
+  content:"";
+  border-bottom: 1rpx solid #ddd;
+  margin-top:15rpx; 
+}
+.goodsName{
+  font-size: 14px;
+  color: #000;
+  overflow-y: hidden;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.goodsTips{
+  align-items:stretch; 
+}
+.goodsPrice{
+  color: #f00;
+  font-size: 10px;
+}
+.maxPrice{
+  font-size: 14px;
+}
+.minCar{
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: 20rpx;
+  top:2.6rem;
+  
+}
+.minCarImg{
+  width: 1rem;
+  height: 28rpx;
+}
+
+.goodsStar{
+  position: absolute;
+  top:3.7rem;
+  right:20rpx;
+  font-size: 25px;
+}

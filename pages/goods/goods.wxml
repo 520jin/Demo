@@ -1,0 +1,55 @@
+<swiper class='slider' autoplay='{{true}}' indicator-dots='{{true}}' duration='500' interval='2500' circular='{{true}}'>
+  <swiper-item wx:for='{{sliderImgList}}' wx:key="id">
+    <image src='{{item.image}}' mode='aspectFill'></image>
+  </swiper-item>
+</swiper>
+<view class='desc'>
+  <text>集香草蔓越莓味夹心麻薯180g爆浆和风麻薯传统糕点点心美食早餐食品</text>
+  <text class='tips'>超Q口感 细腻香甜 清爽软糯 独特风味</text>
+</view>
+<view class='diviter'></view>
+<view class='types vcenter'>
+  <picker mode='multiSelector' range='{{multiTypes}}' value='{{typeindex}}' bindchange="typeChange">
+    <view  class='picker'>
+    <text class='fontstyle'>已选</text>
+      <text>{{multiTypes[0][typeindex[0]]}}{{multiTypes[1][typeindex[1]]}}/袋{{multiTypes[2][typeindex[2]]}}件</text>
+      <text class='arrow'></text>
+    </view>
+   
+  </picker>
+</view>
+<view class='diviter'></view>
+
+<view class='address vcenter'>
+  <picker mode='region' bindchange="bindPickerChange" value='{{region}}'>
+    <view class="picker">
+      <text class='fontstyle'>送至</text>
+      {{region[0]}}{{region[1]}}{{region[2]}}
+      <text class='arrow'></text>
+    </view>
+  </picker>
+</view>
+<view class='diviter'></view>
+<view class='comment  vcenter'>
+  <view class='commentTitle'>
+    <text>评论[100+]</text>
+    <text class='comNum  arrow'>好评率98%</text>
+  </view>
+  <view class='commentItem vcenter'>
+    <view class='commentHead'>
+    <view class='star'>
+       <text class='comstarBefore'>★★★★★</text>
+    <text class='comstarAfter' style=' width: 90%;'>★★★★★</text>
+    </view>
+    <text class='username'>135*****78</text>
+    </view>
+    <text class='content'>还行，就是我拍的蔓越莓麻薯，给我发的曲奇！！</text>
+    <view class='commentImg'>
+    <image src='https://image1.suning.cn/uimg/ZR/share_order/153597379661710381_100x100.jpg?from=mobile'></image>
+    <image src='https://image1.suning.cn/uimg/ZR/share_order/153597379661710381_100x100.jpg?from=mobile'></image>
+    </view>
+  </view>
+  <view class='allComment center'>
+    <text class='allFont'>查看全部评论</text>
+  </view>
+</view>

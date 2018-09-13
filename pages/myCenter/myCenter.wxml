@@ -1,0 +1,13 @@
+<view class='header'>
+  <image src='/images/myHeader.jpg'></image>
+  <text>用户名</text>
+</view>
+<view>
+<navigator url='item.url' class='term' wx:for='{{termList}}' wx:key='id'>
+  <view class='leftterm vCerter'>
+    <image src='{{item.image}}'></image>
+    <text>{{item.text}}</text>
+  </view>
+  <view class='{{(item.text == "我的订单" || item.text == "我的拼团")?"rightterm circular" : "rightterm"}} arrow' id='{{item.text == "我的订单"? orderSum :(item.text == "我的拼团"?ptSum:"")}}'></view>
+</navigator>
+</view>

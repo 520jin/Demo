@@ -1,0 +1,32 @@
+.slider,
+.sliderItem,
+.slider image{
+  width:750rpx;
+  height: 366rpx;
+}
+.samllTitle{
+  font-size: 20px;
+  border-left: 5rpx solid rgb(245, 187, 28);
+  padding-left: 20rpx;
+  margin: 25rpx 25rpx;
+}
+.nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.navItem{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+.navItem image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.navigator-hover{
+background-color:#fff; 
+  color:blue;
+}

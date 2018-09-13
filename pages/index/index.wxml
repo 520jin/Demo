@@ -1,0 +1,18 @@
+<view class="slider">
+  <swiper autoplay='{{true}}' indicator-dots='{{true}}' interval='2500' duration='500' circular='{{true}}' class='sliderItem'>
+    <swiper-item wx:for="{{sliderImgList}}" wx:key="id">
+      <navigator url='#'>
+        <image src='{{item.image}}' mode='aspectFill'></image>
+      </navigator>
+    </swiper-item>
+  </swiper>
+</view>
+<view class='samllTitle'>
+  <text>主题馆</text>
+</view>
+<view class='nav'>
+  <navigator wx:for="{{navList}}" wx:key='id' class='navItem'  url='{{item.path}}' open-type='{{item.opentype=="switchTab"?"switchTab":"navigate"}}'>
+    <image src='{{item.image}}' mode='aspectFill'></image>
+    <text>{{item.text}}</text>
+  </navigator>
+</view>

@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/category/category",
+    "pages/car/car",
+    "pages/myCenter/myCenter",
+    "pages/shopList/shopList",
+    "pages/goods/goods",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"white",
+    "navigationBarBackgroundColor": "#292929",
+    "navigationBarTitleText": "缤芬小镇",
+    "navigationBarTextStyle":"white",
+    "backgroundColor": "#f2f2f2"
+  },
+  "tabBar": {
+    "backgroundColor": "#292929",
+    "selectedColor": "#f9f027",
+    "color": "#fff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/images/footer-icon-01.png",
+      "selectedIconPath": "/images/footer-icon-01-active.png"
+    },
+    {
+      "pagePath": "pages/category/category",
+      "text": "分类",
+     "iconPath": "/images/footer-icon-02.png",
+      "selectedIconPath": "/images/footer-icon-02-active.png"
+    },
+    {
+      "pagePath": "pages/car/car",
+      "text": "购物车",
+     "iconPath": "/images/footer-icon-03.png",
+      "selectedIconPath": "/images/footer-icon-03-active.png"
+    },
+    {
+      "pagePath": "pages/myCenter/myCenter",
+      "text": "我的",
+     "iconPath": "/images/footer-icon-04.png",
+      "selectedIconPath": "/images/footer-icon-04-active.png"
+    }]
+  }
+  
+}
